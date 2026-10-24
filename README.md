@@ -1,4 +1,4 @@
-﻿# T4Decode - LLM Speculative Decoding and Quantization Suite
+# T4Decode - LLM Speculative Decoding and Quantization Suite
 
 > A reproducible experimental framework for accelerating Large Language Model decoding on consumer and cloud GPU tiers (Google Colab NVIDIA T4).
 > PyTorch | Hugging Face Transformers | Speculative Draft Decoding | bitsandbytes INT8 & NF4 | LoRA Distillation
@@ -88,25 +88,25 @@ python build_notebooks.py
 
 ```
 t4-speculative-decoding/
-â”œâ”€â”€ notebooks/                  # Reproducible Colab notebooks
-â”‚   â”œâ”€â”€ 01_Baseline_T4.ipynb
-â”‚   â”œâ”€â”€ 02_Train_Optimize_T4.ipynb
-â”‚   â””â”€â”€ 03_Evaluate_Demo_T4.ipynb
-â”œâ”€â”€ t4decode/                   # Core Python package
-â”‚   â”œâ”€â”€ cli.py                  # CLI driver and evaluation runner
-â”‚   â”œâ”€â”€ core.py                 # Case generation, scoring, and configuration selector
-â”‚   â”œâ”€â”€ engine.py               # Speculative decoding runtime and KV-cache management
-â”‚   â””â”€â”€ training.py             # Teacher dataset collection and LoRA trainer
-â”œâ”€â”€ tests/                      # Automated unit tests
-â”‚   â”œâ”€â”€ test_core.py
-â”‚   â”œâ”€â”€ test_engine_cpu.py
-â”‚   â””â”€â”€ test_lora_cpu.py
-â”œâ”€â”€ build_notebooks.py          # Notebook packaging and embedding script
-â”œâ”€â”€ BUILD_MANIFEST.json         # Cryptographic build manifest
-â”œâ”€â”€ requirements-colab.txt      # PyTorch and Hugging Face dependencies
-â”œâ”€â”€ pytest.ini                  # Pytest configuration
-â”œâ”€â”€ LICENSE                     # MIT License
-â””â”€â”€ README.md                   # Project documentation
+├── notebooks/                  # Reproducible Colab notebooks
+│   ├── 01_Baseline_T4.ipynb
+│   ├── 02_Train_Optimize_T4.ipynb
+│   └── 03_Evaluate_Demo_T4.ipynb
+├── t4decode/                   # Core Python package
+│   ├── cli.py                  # CLI driver and evaluation runner
+│   ├── core.py                 # Case generation, scoring, and configuration selector
+│   ├── engine.py               # Speculative decoding runtime and KV-cache management
+│   └── training.py             # Teacher dataset collection and LoRA trainer
+├── tests/                      # Automated unit tests
+│   ├── test_core.py
+│   ├── test_engine_cpu.py
+│   └── test_lora_cpu.py
+├── build_notebooks.py          # Notebook packaging and embedding script
+├── BUILD_MANIFEST.json         # Cryptographic build manifest
+├── requirements-colab.txt      # PyTorch and Hugging Face dependencies
+├── pytest.ini                  # Pytest configuration
+├── LICENSE                     # MIT License
+└── README.md                   # Project documentation
 ```
 
 ---
