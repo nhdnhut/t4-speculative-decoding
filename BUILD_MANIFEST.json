@@ -1,0 +1,83 @@
+{
+  "project": "T4Decode",
+  "version": "0.1.0",
+  "created": "2026-10-13",
+  "gpu_benchmarks_executed": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 12750,
+      "sha256": "0953e6b23299ea21dd4934d8b1872f7a1b6c0026c7eb2b021d7eea3ab75a2396"
+    },
+    {
+      "path": "VALIDATION.txt",
+      "bytes": 2664,
+      "sha256": "deef0298f6d03b4ec71db3d26b3bdc516ef94da36b9239721fc570cb2b056a8b"
+    },
+    {
+      "path": "build_notebooks.py",
+      "bytes": 13173,
+      "sha256": "f63f6bf946c0bb381b3b6ee7ed6f3ceb1c4a4b0efed2a0b56fdf4f342b6cb2bb"
+    },
+    {
+      "path": "notebooks/01_Baseline_T4.ipynb",
+      "bytes": 40703,
+      "sha256": "dcb22ab7ccc00163836c601df9ec7c96bd50d588f55e3fecf9ea87d94dd109d1"
+    },
+    {
+      "path": "notebooks/02_Train_Optimize_T4.ipynb",
+      "bytes": 42733,
+      "sha256": "c05297b2b5b68d2b9b4561cf6f5f0002c13547dc9db89394e0814584baece75b"
+    },
+    {
+      "path": "notebooks/03_Evaluate_Demo_T4.ipynb",
+      "bytes": 43914,
+      "sha256": "5ab33e58157b720eab8b98fe1791da733c7c73725324f93aa8c4ce97546f30f1"
+    },
+    {
+      "path": "requirements-colab.txt",
+      "bytes": 254,
+      "sha256": "ddf973e1775c8df3715741e460de0db0546f0fcfbfeabfa4d1e5d55dfc704c37"
+    },
+    {
+      "path": "t4decode/__init__.py",
+      "bytes": 84,
+      "sha256": "833078e84d50fd43af60237cef87dba912920930cdea7775038439541d432e64"
+    },
+    {
+      "path": "t4decode/cli.py",
+      "bytes": 13488,
+      "sha256": "6fee102612019a6952795becefe052dfd7a9b25a1973c41612cd542803202c7a"
+    },
+    {
+      "path": "t4decode/core.py",
+      "bytes": 9914,
+      "sha256": "c1d7fe778c3319e5fc3a2e7408e41daa35871e0cd2e7753687764dabcdc2d237"
+    },
+    {
+      "path": "t4decode/engine.py",
+      "bytes": 13119,
+      "sha256": "c03d099bfa54b0ce09dc964a22d03dbb86e71bcee0e1a344152ee65ab9d0c837"
+    },
+    {
+      "path": "t4decode/training.py",
+      "bytes": 10856,
+      "sha256": "53b256856ef5e0d2e2a211499c3a0e56c2ba34f65971a79efb1c86973897d2a7"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 2528,
+      "sha256": "32523be474d1e07c052f990e399c3067017a9feb964aae89cc948346ef6b1115"
+    },
+    {
+      "path": "tests/test_engine_cpu.py",
+      "bytes": 3197,
+      "sha256": "397dc89710faf2c8be0e6261011415d0b6729e8db0ee35fee73181b67781a6f8"
+    },
+    {
+      "path": "tests/test_lora_cpu.py",
+      "bytes": 1981,
+      "sha256": "178ceb0cc1dfb3118a2fa87a1e8dc7315f08810519237072fc8f127fa19464f8"
+    }
+  ]
+}

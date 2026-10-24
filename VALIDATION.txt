@@ -1,0 +1,42 @@
+CPU integration and notebook validation, 2026-10-13
+Torch: 2.8.0+cpu; Transformers: 4.57.1; PEFT: 0.17.1
+No CUDA/T4 execution and no pretrained model benchmark performed.
+
+test_gold_scoring_not_teacher_agreement (test_core.CoreTests.test_gold_scoring_not_teacher_agreement) ... ok
+test_mask_prompt_and_do_not_silently_truncate (test_core.CoreTests.test_mask_prompt_and_do_not_silently_truncate) ... ok
+test_selector_rejects_oom_incorrect_low_quality_and_partial (test_core.CoreTests.test_selector_rejects_oom_incorrect_low_quality_and_partial) ... ok
+test_split_reproducibility_and_disjoint_prompts (test_core.CoreTests.test_split_reproducibility_and_disjoint_prompts) ... ok
+test_dynamic_and_context_guard (test_engine_cpu.EngineTests.test_dynamic_and_context_guard) ... `generation_config` default values have been modified to match model-specific defaults: {'num_assistant_tokens': 8}. If this is not desired, please set these values explicitly.
+A custom logits processor of type <class 'transformers.generation.logits_process.SuppressTokensLogitsProcessor'> has been passed to `.generate()`, but it was also created in `.generate()`, given its parameterization. The custom <class 'transformers.generation.logits_process.SuppressTokensLogitsProcessor'> will take precedence. Please check the docstring of <class 'transformers.generation.logits_process.SuppressTokensLogitsProcessor'> to see related `.generate()` flags.
+ok
+test_eos_is_counted_as_accepted_proposal (test_engine_cpu.EngineTests.test_eos_is_counted_as_accepted_proposal) ... `generation_config` default values have been modified to match model-specific defaults: {'num_assistant_tokens': 4}. If this is not desired, please set these values explicitly.
+ok
+test_exact_greedy_with_perfect_draft_and_trace (test_engine_cpu.EngineTests.test_exact_greedy_with_perfect_draft_and_trace) ... ok
+test_rejected_draft_keeps_greedy_output (test_engine_cpu.EngineTests.test_rejected_draft_keeps_greedy_output) ... ok
+test_response_only_backward_save_reload_and_merge (test_lora_cpu.LoRATests.test_response_only_backward_save_reload_and_merge) ... /workspace/scratch/6e3760b50a7a/qa_deps/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in  - will assume that the vocabulary was not modified.
+  warnings.warn(
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.284s
+
+OK
+
+Notebook checks:
+[
+  {
+    "file": "01_Baseline_T4.ipynb",
+    "cells": 13,
+    "bytes": 40703
+  },
+  {
+    "file": "02_Train_Optimize_T4.ipynb",
+    "cells": 17,
+    "bytes": 42733
+  },
+  {
+    "file": "03_Evaluate_Demo_T4.ipynb",
+    "cells": 16,
+    "bytes": 43914
+  }
+]
